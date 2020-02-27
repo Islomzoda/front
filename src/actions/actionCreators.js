@@ -1,5 +1,5 @@
 import { FETCH_MEMOS_REQUEST, FETCH_MEMOS_SUCCESS, FETCH_MEMOS_FAILURE, REMOVE_MEMO_CONFIRM, REMOVE_MEMO_CANCEL, REMOVE_MEMO_REQUEST, REMOVE_MEMO_SUCCESS, REMOVE_MEMO_FAILURE, EDIT_MEMO_FIELD_CHANGE, EDIT_MEMO_REQUEST, EDIT_MEMO_SUCCESS, EDIT_MEMO_FAILURE, EDIT_MEMO_CANCEL, EDIT_MEMO_EXISTING, DESCRIPTION_MEMO_GET } from "./actionTypes";
-const apiUrl = 'http://localhost:9999/api/memos/'
+const apiUrl = 'https://islomzoda-back-end-app.herokuapp.com/api/memos/'
 // не совсем правильный action creator
 export async function getMemos(dispatch) {
     dispatch(fetchMemosRequest());
